@@ -19,10 +19,7 @@ class DataProviderRepositoryTraitTest extends TestCase
 
     public function testFindByFiltersIds(): void
     {
-        $findByFiltersIdsReflection = new \ReflectionMethod(
-            \get_class($this->dataProviderRepositoryTrait),
-            'findByFiltersIds'
-        );
+        $findByFiltersIdsReflection = (new \ReflectionClass(\get_class($this->dataProviderRepositoryTrait)))->getMethod('findByFiltersIds');
 
         $this->assertTrue(true);
     }
