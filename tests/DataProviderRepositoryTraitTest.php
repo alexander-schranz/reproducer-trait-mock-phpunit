@@ -10,5 +10,7 @@ class DataProviderRepositoryTraitTest extends TestCase
     public function testTrait(): void
     {
         $this->getMockForTrait(DataProviderRepositoryTrait::class);
+
+        $this->assertTrue(true);
     }
 }
