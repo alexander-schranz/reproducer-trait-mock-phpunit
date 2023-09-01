@@ -3,13 +3,10 @@
 namespace Tests;
 
 use PHPUnit\Framework\TestCase;
-use Prophecy\PhpUnit\ProphecyTrait;
 use Sulu\Component\SmartContent\Orm\DataProviderRepositoryTrait;
 
 class DataProviderRepositoryTraitTest extends TestCase
 {
-    use ProphecyTrait;
-
     /**
      * @var DataProviderRepositoryTrait
      */
